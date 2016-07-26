@@ -18,4 +18,9 @@ public class UserServiceImpl implements IUserService{
 	public List<User> selectAllUser(){
 		return userDao.selectAllUser();
 	}
+	
+	@Override
+	public void insert(User user){
+		userDao.insert(user);
+	}
 }

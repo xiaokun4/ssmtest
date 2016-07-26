@@ -6,4 +6,5 @@ import com.ssm.test.entity.User;
 
 public interface IUserService {
 	public List<User> selectAllUser();
+	public void insert(User user);
 }

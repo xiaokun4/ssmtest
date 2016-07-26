@@ -10,7 +10,7 @@
     <context:component-scan base-package="com.ssm.test.**.service,com.ssm.test.**.bean"/>
 
     <!-- spring初始化时,会将springContext注入该对象 -->
-    <!-- <bean class="com.ssm.demo.util.SpringHelper"/> -->
+    <bean class="com.ssm.test.util.SpringHelper"/>
 
     <!-- 读取properties文件（注意:读取多个文件的时候，需要写一起） -->
     <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
@@ -23,4 +23,8 @@
     </bean>
 
     <import resource="classpath:spring-dao.xml"/>
+    <import resource="classpath:spring-redis.xml"/>
+    <!-- <import resource="classpath:spring-quartz.xml"/>
+    <import resource="classpath:spring-webservice.xml"/>
+    <import resource="classpath:spring-shiro.xml"/> -->
 </beans>

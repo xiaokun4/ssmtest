@@ -25,4 +25,13 @@ public class UserController {
 		map.put("userList", userList);
 		return "User/userlist";
     }
+	
+	@RequestMapping("/addUser")
+	public String addUser(HttpServletRequest request,ModelMap map,String userName,String password){
+		User user = new User();
+		user.setUserName(userName);
+		user.setPassWord(password);
+		userService.insert(user);
+		return "redirect:showAllUser.do";
+    }
 }
