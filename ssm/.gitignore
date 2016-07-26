@@ -1,2 +1,15 @@
-/target/
-/bin/
+# Java class files
+*.class
+bin/
+target/
+src/main/resources/config.properties
+.settings/
+.project
+.classpath
+/.springBeans
+config.properties
+log4j.properties
+
+.idea/
+/*.iml
+/.externalToolBuilders/
