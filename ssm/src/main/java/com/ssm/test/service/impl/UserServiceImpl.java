@@ -14,7 +14,6 @@ public class UserServiceImpl implements IUserService{
 	@Autowired
 	private IUserDao userDao;
 	
-	@Override
 	public List<User> selectAllUser(){
 		return userDao.selectAllUser();
 	}
